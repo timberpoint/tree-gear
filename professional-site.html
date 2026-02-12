@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Professional Arborist Equipment Reviews | 20+ Years Experience</title>
+    <meta name="description" content="Expert chainsaw, safety gear, and tree care equipment reviews from a professional arborist with 20+ years field experience. Honest, tested recommendations.">
+    <meta name="keywords" content="chainsaw reviews, arborist equipment, tree care tools, professional chainsaw, climbing gear reviews">
+    
+    <!-- INSTRUCTIONS TO ADD YOUR AMAZON AFFILIATE TAG:
+         Search for "YOUR-AMAZON-TAG-HERE" and replace with your actual Amazon Associates tracking ID
+         Example: amzn-assoc-20 -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --forest: #1e5128;
+            --orange: #ff6b35;
+            --dark: #0d1b0e;
+            --text: #2d3436;
+            --light: #636e72;
+            --bg: #f8f9fa;
+            --white: #ffffff;
+            --border: #e1e8ed;
+            --success: #27ae60;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--white);
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--forest);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 1.5rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--dark);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo span {
+            color: var(--orange);
+        }
+
+        nav a {
+            margin-left: 2rem;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--forest);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--forest) 0%, #0d3d1a 100%);
+            color: white;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--orange);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            background: var(--orange);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(255,107,53,0.3);
+        }
+
+        .cta-btn:hover {
+            background: #ff8555;
+            transform: translateY(-2px);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .section {
+            padding: 5rem 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            color: var(--orange);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Review Cards */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .review-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 1px solid var(--border);
+        }
+
+        .review-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .review-image {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, #e9ecef, #dee2e6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+        }
+
+        .review-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--orange);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .review-content {
+            padding: 2rem;
+        }
+
+        .review-category {
+            color: var(--forest);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+
+        .review-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .review-excerpt {
+            color: var(--light);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--light);
+        }
+
+        .read-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: var(--forest);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 8px;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .read-btn:hover {
+            background: #2a7a3d;
+        }
+
+        /* Categories */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--forest);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .category-card p {
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            opacity: 0.95;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .expertise-item {
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0f0a;
+            color: rgba(255,255,255,0.8);
+            padding: 3rem 5% 2rem;
+        }
+
+        .disclaimer {
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--orange);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .disclaimer strong {
+            color: var(--orange);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .review-grid,
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        ✓ 20+ Years Professional Experience | ✓ Field-Tested Reviews | ✓ Honest Recommendations
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">Tree<span>CarePro</span></div>
+            <nav>
+                <a href="#reviews">Reviews</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Professional Equipment Reviews You Can Trust</h1>
+        <p>20+ years as a utility arborist and logger. Real field experience, honest recommendations, and detailed reviews to help you choose the right gear.</p>
+        <a href="#reviews" class="cta-btn">Read Latest Reviews</a>
+        
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Products Tested</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Honest Reviews</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section" style="background: var(--bg);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Browse by Category</div>
+                <h2 class="section-title">Find the Right Equipment</h2>
+                <p class="section-subtitle">Expert reviews and buying guides for every type of tree care equipment</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">⚙️</div>
+                    <h3>Chainsaws</h3>
+                    <p>Professional-grade chainsaws tested in real working conditions. From top-handle to full-size models.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🦺</div>
+                    <h3>Safety Equipment</h3>
+                    <p>Climbing harnesses, protective gear, and safety equipment that meets professional standards.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🪢</div>
+                    <h3>Rigging Gear</h3>
+                    <p>Blocks, pulleys, ropes, and slings for technical tree work and complex removals.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🪚</div>
+                    <h3>Hand Tools</h3>
+                    <p>Hand saws, pruners, and pole saws for precision work when power tools aren't the answer.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <h3>Maintenance</h3>
+                    <p>Files, sharpeners, and maintenance tools to keep your equipment running like new.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">👕</div>
+                    <h3>Work Apparel</h3>
+                    <p>Durable work clothing, boots, and gear that holds up to daily professional use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Reviews -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Latest Reviews</div>
+                <h2 class="section-title">In-Depth Equipment Reviews</h2>
+                <p class="section-subtitle">Detailed analysis based on real professional use</p>
+            </div>
+
+            <div class="review-grid">
+                
+                <article class="review-card">
+                    <div class="review-image">
+                        <span class="review-badge">Top Pick</span>
+                        ⚙️
+                    </div>
+                    <div class="review-content">
+                        <div class="review-category">Chainsaws</div>
+                        <h3>Best Professional Chainsaws 2024: My Top 5 Picks</h3>
+                        <p class="review-excerpt">After 20 years running chainsaws daily, these are the models I trust for professional use. Detailed comparison of power, reliability, and value.</p>
+                        <div class="review-meta">
+                            <span>8 min read</span>
+                            <span>Feb 2024</span>
+                        </div>
+                        <a href="https://www.amazon.com/s?k=professional+chainsaw&tag=YOUR-AMAZON-TAG-HERE" class="read-btn" target="_blank" rel="nofollow noopener">View Recommended Chainsaws →</a>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-image">
+                        <span class="review-badge">Safety First</span>
+                        🦺
+                    </div>
+                    <div class="review-content">
+                        <div class="review-category">Safety Gear</div>
+                        <h3>Climbing Harness Buying Guide 2024</h3>
+                        <p class="review-excerpt">Your harness keeps you alive. Here's what to look for in comfort, safety certifications, and durability based on thousands of climbs.</p>
+                        <div class="review-meta">
+                            <span>10 min read</span>
+                            <span>Feb 2024</span>
+                        </div>
+                        <a href="https://www.amazon.com/s?k=arborist+climbing+harness&tag=YOUR-AMAZON-TAG-HERE" class="read-btn" target="_blank" rel="nofollow noopener">Shop Safety Harnesses →</a>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-image">
+                        <span class="review-badge">How-To</span>
+                        🔧
+                    </div>
+                    <div class="review-content">
+                        <div class="review-category">Maintenance</div>
+                        <h3>How to Sharpen a Chainsaw: Pro Techniques</h3>
+                        <p class="review-excerpt">A sharp chain is a safe chain. Learn the proper technique and tools I use to keep my saws cutting like new after years of use.</p>
+                        <div class="review-meta">
+                            <span>7 min read</span>
+                            <span>Jan 2024</span>
+                        </div>
+                        <a href="https://www.amazon.com/s?k=chainsaw+sharpening+kit&tag=YOUR-AMAZON-TAG-HERE" class="read-btn" target="_blank" rel="nofollow noopener">Get Sharpening Tools →</a>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-image">
+                        <span class="review-badge">Comparison</span>
+                        ⚖️
+                    </div>
+                    <div class="review-content">
+                        <div class="review-category">Brand Comparison</div>
+                        <h3>Stihl vs Husqvarna: Honest Comparison</h3>
+                        <p class="review-excerpt">I've run both brands extensively. Here's my unbiased take on reliability, power, parts availability, and which one I reach for most.</p>
+                        <div class="review-meta">
+                            <span>12 min read</span>
+                            <span>Jan 2024</span>
+                        </div>
+                        <a href="https://www.amazon.com/s?k=stihl+husqvarna+chainsaw&tag=YOUR-AMAZON-TAG-HERE" class="read-btn" target="_blank" rel="nofollow noopener">Compare Brands →</a>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-image">
+                        <span class="review-badge">Essential</span>
+                        🪢
+                    </div>
+                    <div class="review-content">
+                        <div class="review-category">Rigging</div>
+                        <h3>Essential Rigging Gear: Complete Guide</h3>
+                        <p class="review-excerpt">Technical removals require the right equipment. My must-have list of blocks, ropes, and rigging gear for complex jobs.</p>
+                        <div class="review-meta">
+                            <span>9 min read</span>
+                            <span>Dec 2023</span>
+                        </div>
+                        <a href="https://www.amazon.com/s?k=arborist+rigging+equipment&tag=YOUR-AMAZON-TAG-HERE" class="read-btn" target="_blank" rel="nofollow noopener">Shop Rigging Gear →</a>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-image">
+                        <span class="review-badge">Top 3</span>
+                        🪚
+                    </div>
+                    <div class="review-content">
+                        <div class="review-category">Hand Tools</div>
+                        <h3>Best Hand Saws for Arborists 2024</h3>
+                        <p class="review-excerpt">Power tools aren't always the answer. These hand saws have earned their permanent spot in my truck through years of reliable service.</p>
+                        <div class="review-meta">
+                            <span>6 min read</span>
+                            <span>Dec 2023</span>
+                        </div>
+                        <a href="https://www.amazon.com/s?k=professional+hand+saw+arborist&tag=YOUR-AMAZON-TAG-HERE" class="read-btn" target="_blank" rel="nofollow noopener">View Hand Saws →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>Why Trust These Reviews?</h2>
+            <p>I'm not a weekend warrior or YouTube reviewer. I'm a working professional who depends on this equipment every single day. These reviews are based on real field experience, not manufacturer specs or first impressions.</p>
+
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <strong style="font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">✓ Utility Line Clearance</strong>
+                    Thousands of hours working around power lines
+                </div>
+                <div class="expertise-item">
+                    <strong style="font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">✓ Technical Removals</strong>
+                    Complex rigging and crane operations
+                </div>
+                <div class="expertise-item">
+                    <strong style="font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">✓ Storm Response</strong>
+                    Emergency tree work in challenging conditions
+                </div>
+                <div class="expertise-item">
+                    <strong style="font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">✓ Logging Operations</strong>
+                    Commercial timber harvesting experience
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--forest), #0d3d1a); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1.5rem; font-weight: 800;">Ready to Find the Right Equipment?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto;">Browse detailed reviews and buying guides backed by 20+ years of professional experience.</p>
+            <a href="#reviews" class="cta-btn">View All Reviews</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="disclaimer">
+                <strong>Affiliate Disclosure</strong>
+                This website contains Amazon affiliate links. When you purchase through these links, I may earn a small commission at no additional cost to you. This helps support the site and allows me to continue providing honest, experience-based reviews. I only recommend products I have personally used or would confidently use based on my 20+ years of professional arborist and logging experience. All opinions are my own and are not influenced by affiliate relationships.
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tree Care Pro. All reviews based on real professional experience.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
